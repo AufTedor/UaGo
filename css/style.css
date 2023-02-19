@@ -37,6 +37,14 @@ body {
    line-height: 1;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: Montserrat;
+}
+
 [class*="__container"] {
    max-width: 1056px;
    margin: 0 auto;
@@ -60,4 +68,155 @@ body {
       max-width: none;
       padding: 0px 15px;
    }
+}
+
+.wrapper {}
+
+.header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: #fff;
+}
+
+.header__container {
+   display: flex;
+   align-items: center;
+   height: 80px;
+}
+
+.header__logo {
+   margin-right: 115px;
+   display: block;
+   position: relative;
+   width: 178px;
+   height: 65px;
+}
+
+.header__logo img {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+}
+
+.header__nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex: 1 1 auto;
+}
+
+.header__list {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}
+
+.header__item {}
+
+.header__link {
+   font-size: 16px;
+   font-weight: 700;
+   color: #171717;
+   transition: all 0.3s ease 0s;
+}
+
+.header__link:hover {
+   color: #459BFF;
+}
+
+.header__button {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 120%;
+   letter-spacing: 0.005em;
+   color: #FFFFFF;
+   background-color: #fff;
+   background: #FFD361;
+   border-radius: 30px;
+   padding: 10px 26px;
+   transition: all 0.3s ease 0s;
+}
+
+.header__button:hover {
+   background: #f0c75f;
+}
+
+.close-icon,
+.burger-icon {
+   display: none;
+   cursor: pointer;
+}
+
+.active {}
+
+@media (max-width: 1199.98px) {
+   .header__logo {
+      margin-right: auto;
+   }
+
+   .header__container {
+      justify-content: space-between;
+   }
+
+   .header__nav {
+      flex: none;
+      gap: 45px;
+   }
+}
+
+@media (max-width: 990.98px) {
+
+   .close-icon,
+   .burger-icon {
+      display: block;
+   }
+
+   .close-icon {
+      position: absolute;
+      top: 20px;
+      left: 15px;
+   }
+
+
+   .header__nav {
+      position: fixed;
+      flex-direction: column;
+      top: 0;
+      right: -100%;
+      justify-content: start;
+      background-color: #459BFF;
+      width: 40%;
+      height: 100%;
+      align-items: center;
+      gap: 60px;
+      transition: all 0.3s ease 0s;
+   }
+
+   .header__nav.active {
+      right: 0;
+      overflow-y: scroll;
+   }
+
+   .header__list {
+      flex-direction: column;
+      padding-top: 80px;
+   }
+
+   .scrollable {
+      overflow: hidden
+   }
+}
+
+@media (max-width: 589.98px) {
+   .header__nav {
+      width: 50%;
+   }
+}
+
+@media (max-width: 479.98px) {
+   .header__nav {
+         width: 100%;
+      }
 }
