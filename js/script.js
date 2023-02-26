@@ -15,3 +15,11 @@ close_burger.onclick = function () {
    burger.classList.toggle('active');
    document.body.classList.toggle('scroll-blocked');
 }
+
+$(document).ready(function () {
+   $('slider').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1
+  });
+});
