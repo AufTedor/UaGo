@@ -437,7 +437,6 @@ body {
    width: 100%;
    height: 100%;
    background: rgba(0, 0, 0, 0.5);
-   border-radius: 90px;
    opacity: 0;
    transition: all 0.3s ease 0s;
 }
@@ -628,6 +627,7 @@ body {
       width: 115px;
       height: 170px;
    }
+
    .item-exp__label1,
    .item-exp__label2 {
       padding: 0px 5px;
@@ -638,7 +638,228 @@ body {
       height: 337px;
    }
 
-      .exp__title {
-         font-size: 32px;
-      }
+   .exp__title {
+      font-size: 32px;
+   }
 }
+
+/* ------------------------------------------- */
+
+.tours {
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+
+.tours__container {}
+
+.tours__label {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+.tours__btn {
+   content: '';
+   background-color: #ffd361;
+   width: 80px;
+   height: 80px;
+   border-radius: 90px;
+   transition: all 0.3s ease 0s;
+}
+
+.tours__slider {
+   width: 100%;
+   display: flex;
+}
+
+.label-tours__title {}
+
+.label-tours__btns {
+   display: flex;
+   gap: 15px;
+}
+
+.label-tours__btn {}
+
+
+.btn-left {
+   position: relative;
+}
+
+.btn-left span::before {
+   position: absolute;
+   top: 33%;
+   left: 25%;
+   content: '';
+   width: 35px;
+   height: 8px;
+   background-color: #171717;
+   transform: rotate(-45deg);
+}
+
+.btn-left span::after {
+   position: absolute;
+   bottom: 33%;
+   left: 25%;
+   content: '';
+   width: 35px;
+   height: 8px;
+   background-color: #171717;
+   transform: rotate(45deg);
+}
+
+.btn-right {
+   position: relative;
+}
+
+.btn-right span::before {
+   position: absolute;
+   top: 33%;
+   right: 25%;
+   content: '';
+   width: 35px;
+   height: 8px;
+   background-color: #171717;
+   transform: rotate(45deg);
+}
+
+.btn-right span::after {
+   position: absolute;
+   bottom: 33%;
+   right: 25%;
+   content: '';
+   width: 35px;
+   height: 8px;
+   background-color: #171717;
+   transform: rotate(-45deg);
+}
+
+.tours__btn:hover {
+   background-color: #171717;
+}
+
+.tours__btn span::before,
+.tours__btn span::after {
+   transition: all 0.3s ease 0s;
+}
+
+.tours__btn:hover span::before,
+.tours__btn:hover span::after {
+   background-color: #FFD361;
+}
+
+
+
+.ts {
+   display: flex;
+   margin-top: 70px;
+}
+
+.ts__item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   width: 437px;
+   height: 290px;
+   border: 5px dashed #171717;
+   border-radius: 30px;
+   transition: all 0.3s ease 0s;
+
+}
+
+.ts__item:hover {
+   border: 5px dashed #4594FD;
+}
+.ts__item:hover .tsi__title {
+   color: #3f84dd;
+}
+.ts__item:hover .tsi__loc {
+   color: #4594FD;
+}
+
+
+.tsl {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 100%;
+}
+
+
+.tsi__img {
+   width: 405px;
+   height: 181px;
+   position: relative;
+   margin-top: 15px;
+}
+
+.tsi__img img {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 30px 30px 0px 0px;
+}
+
+
+.tsi__text {
+   margin-top: 10px;
+   width: 100%;
+   margin-left: 30px;
+}
+
+.tsi__title {
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 29px;
+   color: #171717;
+   transition: all 0.3s ease 0s;
+}
+
+.tsi__loc {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 24px;
+   color: #313131;
+   transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 767.98px) {
+   .label-tours__btns {
+      display: none;
+   }
+   .tours__label {
+      text-align: center;
+      justify-content: center;
+   }
+   .label-tours__title {
+
+   }
+}
+
+@media (max-width: 500px) {
+   .ts {
+      margin-top: 30px;
+   }
+   .tsi {
+      width: 354px;
+      border: none;
+   }
+   .tsi__img {
+      width: 324px;
+      height: 145px;
+   }
+   .label-tours__title {
+      max-width: 324px;
+      font-size: 30px;
+   }
+}
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */

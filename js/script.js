@@ -16,10 +16,29 @@ close_burger.onclick = function () {
    document.body.classList.toggle('scroll-blocked');
 }
 
-$(document).ready(function () {
-   $('slider').slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1
-  });
+
+const swiper = new Swiper('.swiper', {
+   // Optional parameters
+   direction: 'horizontal',
+   loop: true,
+   allowTouchMove: true,
+   slidesPerView: 1,
+   spaceBetween: 50,
+   breakpoints: {
+      990.98: {
+         slidesPerView: 2,
+         spaceBetween: 0,
+         allowTouchMove: false,
+      }
+   },
+   autoplay: {
+      delay: 5000,
+   },
+
+
+   // Navigation arrows
+   navigation: {
+      nextEl: '.btn-right',
+      prevEl: '.btn-left   ',
+   },
 });
