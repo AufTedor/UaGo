@@ -40,6 +40,10 @@ body {
 /* -------------------------- */
 /* defaults */
 
+html {
+   scroll-behavior: smooth;
+}
+
 body {
    font-family: Montserrat;
 }
@@ -1161,6 +1165,7 @@ body {
       flex-direction: column;
       align-items: center;
    }
+
    .tours__label-text {
       text-align: center;
    }
@@ -1283,13 +1288,13 @@ body {
       height: 280px;
    }
 
-      .gg-mini {
-         height: auto;
-      }
+   .gg-mini {
+      height: auto;
+   }
 
-            .gg-mini img:first-child {
-               margin-bottom: 25px;
-            }
+   .gg-mini img:first-child {
+      margin-bottom: 25px;
+   }
 
    .gg-mini img:first-child,
    .gg-mini img:last-child {
@@ -1298,3 +1303,87 @@ body {
 }
 
 /* ------------------------------------------- */
+
+.error {
+   user-select: none;
+}
+
+.error__container {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.error__label {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   margin-bottom: 80px;
+}
+
+.error__title {
+   font-family: 'Montserrat Alternates';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 42px;
+   line-height: 39px;
+   /* identical to box height */
+
+   text-align: center;
+
+   color: #459BFF;
+}
+
+.error__img {
+   width: 150px;
+   height: 75px;
+   position: relative;
+}
+
+.error__img img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.error__text {
+   text-align: center;
+}
+
+.error__text h1 {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 1.2;
+   text-align: center;
+   padding-bottom: 25px;
+   color: #171717;
+}
+
+.error__text h2 {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.2;
+   text-align: center;
+
+   color: #313131;
+}
+
+@media (max-width: 479.98px) {
+   .error__text h2 {
+      display: none;
+   }
+
+   .error__text h1 {
+      font-size: 20px;
+   }
+}
