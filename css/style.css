@@ -994,7 +994,7 @@ body {
    grid-column-gap: 70px;
    height: 400px;
    padding-top: 30px;
-   align-items: center;
+   align-items: start;
    justify-content: center;
 }
 
@@ -1003,11 +1003,12 @@ body {
 .footer__group {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: start;
    text-align-last: left;
 }
 
 .footer__group h1 {
+   text-transform: uppercase;
    font-weight: 700;
    font-size: 24px;
    line-height: 29px;
@@ -1056,6 +1057,105 @@ body {
 }
 
 /* ------------------------------------------- */
+
+.tour-intro {
+   background: url('../img/tours-page/intro/bg.jpg') no-repeat;
+   background-size: cover;
+   font-family: Montserrat Alternates;
+   width: 100%;
+   padding-bottom: 100px;
+}
+
+.tour-intro__container {
+   height: 850px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: start;
+}
+
+.tour-intro__content {}
+
+.intro__content {}
+
+.tour-intro__text {}
+
+.tour-intro__text p {
+   font-family: 'Montserrat Alternates';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 59px;
+   text-align: center;
+   color: #FFFFFF;
+   display: block;
+}
+
+.tour-intro__text b {
+   font-family: 'Montserrat Alternates';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 86px;
+   line-height: 105px;
+   text-align: center;
+   color: #FFFFFF;
+   display: block;
+   line-height: 0.95;
+}
+
+.tour-intro__text st {
+   display: block;
+   font-family: 'Montserrat Alternates';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 44px;
+   line-height: 54px;
+   text-align: center;
+   color: #FFFFFF;
+}
+
+.tour-intro__button {
+   font-family: 'Montserrat';
+   text-transform: uppercase;
+   width: 250px;
+   margin-top: 20px;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 24px;
+   text-align: center;
+   color: #313131;
+   padding: 17px 46px;
+}
+
+@media (max-width: 767.98px) {
+   .tour-intro__container {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+}
+
+@media (max-width: 479.98px) {
+   .tour-intro__text p {
+      font-size: 32px;
+   }
+
+   .tour-intro__text b {
+      font-size: 64px;
+   }
+
+   .tour-intro__text st {
+      font-size: 30px;
+   }
+}
+
 /* ------------------------------------------- */
+
+.tours__label-text {
+   max-width: 536px;
+}
+
 /* ------------------------------------------- */
+
+
 /* ------------------------------------------- */
