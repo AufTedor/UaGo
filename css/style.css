@@ -1157,5 +1157,133 @@ body {
 
 /* ------------------------------------------- */
 
+.gallery {
+   padding-top: 170px;
+}
+
+.gallery__container {}
+
+.gallery__group {}
+
+.gg {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+   margin-bottom: 60px;
+}
+
+.gr {
+   flex-direction: row-reverse;
+}
+
+.gg__1 {
+   width: 412px;
+   height: 491px;
+   position: relative;
+}
+
+.gg__1 img {
+   background: rgba(0, 0, 0, 0.5);
+   border-radius: 30px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.gg__title {
+   z-index: 2;
+   position: absolute;
+   bottom: 20px;
+   left: 25px;
+
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 44px;
+   color: #FFFFFF;
+}
+
+.gg span {
+   z-index: 1;
+   top: 0;
+   border-radius: 30px;
+   content: '';
+   background: rgba(0, 0, 0, 0.5);
+   position: absolute;
+   width: 100%;
+   height: 100%;
+}
+
+.gg-mini {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 491px;
+}
+
+.gg-mini img:first-child {
+   width: 541px;
+   height: 214px;
+   border-radius: 30px;
+   object-fit: cover;
+}
+
+.gg-mini img:last-child {
+   width: 541px;
+   height: 214px;
+   border-radius: 30px;
+   object-fit: cover;
+}
+
+@media (max-width: 990.98px) {
+
+   .gg__1,
+   .gg-mini img:first-child,
+   .gg-mini img:last-child {
+      width: 560px;
+   }
+}
+
+@media (max-width: 580px) {
+
+   .gg__1,
+   .gg-mini img:first-child,
+   .gg-mini img:last-child {
+      width: 392px;
+   }
+}
+
+@media (max-width: 479.98px) {
+
+   .gg__1,
+   .gg-mini img:first-child,
+   .gg-mini img:last-child {
+      width: 280px;
+   }
+
+   .gg__1 {
+      height: 280px;
+   }
+
+      .gg-mini {
+         height: auto;
+      }
+
+            .gg-mini img:first-child {
+               margin-bottom: 25px;
+            }
+
+   .gg-mini img:first-child,
+   .gg-mini img:last-child {
+      height: 120px;
+   }
+}
 
 /* ------------------------------------------- */
